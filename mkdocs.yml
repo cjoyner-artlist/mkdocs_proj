@@ -1,0 +1,39 @@
+site_name: Artlist AI Docs - TreePy
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    # - navigation.top
+    - navigation.paths
+    - toc.integrate
+    - content.code.annotate
+  palette: 
+    # Palette toggle for light mode
+    - scheme: artlist-dark
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+  font:
+    text: Sans-serif
+
+extra_css:
+  - _css/colors.css
+  - _css/fonts.css
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      pygments_lang_class: true
+      use_pygments: true
+  - pymdownx.superfences
+
+copyright: |
+  &copy Artlist Ltd 2024
+
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python
